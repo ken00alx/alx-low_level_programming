@@ -1,4 +1,2 @@
 #!/bin/bash
-#include <stdio.h>
-int main()
-
+gcc -E $CFILE > c
