@@ -1,16 +1,15 @@
 #include <stdio.h>
 
-/* *
- * main - Entry puts
- * descriptioni: to prints 
- * return 0 (success)
+/**
+ * Main - Entry puts
+ * Descriptioni: to prints 
+ * Return: 0(success)
  */
  
-int main()
+int main(void)
 
 {
-	fprintf(stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
-			sizeof(stderr, "and that piee of art is useful\" -Dora Korpar, 2015-10-19\n"));
-
-	return(1)
+fprintf (stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
+sizeof ("and that piee of art is useful\" -Dora Korpar, 2015-10-19\n"));
+return(1);
 }
