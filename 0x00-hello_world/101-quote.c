@@ -1,15 +1,12 @@
 #include <stdio.h>
 
-/**
- * Main - Entry puts
- * Descriptioni: to prints 
- * Return: 0(success)
+/** main - Entery point
+ * print task assigned
+ * Return: val 0
  */
- 
-int main(void)
 
+int main(void)
 {
-fprintf (stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19"
-sizeof ("and that piee of art is useful\" -Dora Korpar, 2015-10-19\n"));
-return(1);
+	fprintf("and that piece of art is useful\", - Dora Korpar 2015-10-19\n", stderr);
+	return(1);
 }
