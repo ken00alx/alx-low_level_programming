@@ -1,12 +1,14 @@
 #include <stdio.h>
 
-/** main - Entery point
- * print task assigned
+/**
+ * main - Entery point
+ * Description: print task assigned
  * Return: val 0
  */
 
 int main(void)
 {
-	fprintf("and that piece of art is useful\", - Dora Korpar 2015-10-19\n", stderr);
+ fprintf (stderr, "and that piece of art is useful\" - Dora Korpar, 2015-10-19\n"
+        sizeof ("and that piece of art is useful\" - Dora Korpar, 2015-10-19\n")); 
 	return(1);
 }
