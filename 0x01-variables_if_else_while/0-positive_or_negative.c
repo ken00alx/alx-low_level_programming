@@ -4,14 +4,16 @@
 
 /**
  *  more headers goes there
- * Declearatioin: positive or nevative print
+ * Task: + or - 
  *
  */
 /* betty style doc for function main goes there*/
  
 
 int main(void)
-	/* your code goes there */
+	/**
+	 *  your code goes there 
+	 */
 
 {
 	int n;
