@@ -1,11 +1,8 @@
-/**
- * Author: kenny
- * C-Language
- */
-
 #include <stdio.h>
+#include <stdlib>
+
 /**
- * main - alphabes in lowercase.
+ * main - prints alphabets in lowercase.
  *
  * Return: Always 0 .
  */
