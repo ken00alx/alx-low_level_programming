@@ -3,7 +3,7 @@
  * C-Language
  */
 
-#include <stdio>
+#include <stdio.h>
 /**
  * main - alphabes in lowercase.
  *
