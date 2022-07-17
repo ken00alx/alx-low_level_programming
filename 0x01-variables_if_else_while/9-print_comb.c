@@ -1,4 +1,4 @@
-#include <tdio.h>
+#include <stdio.h>
 /**
  * main - print combination of digits 
  *
