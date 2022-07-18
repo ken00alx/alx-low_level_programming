@@ -1,16 +1,16 @@
 #include <stdio.h>
 /**
  * main - printing all possible combinations of two digits
- * 	ranging from 0 - 99, separated by a comma folowed by a space
+ * ranging from 0 - 99, separated by a comma folowed by a space
  *
  * Return: 0.
  */
 
 	int main(void)
 {
-	int num1 , num2;
+	int num1, num2;
 
-	for (num1 = 0; num1 <= 98; num1++)
+	for (num1 = 0; num1 >= 98; num1++)
 	{
 		for (num2 = num1 + 1; num2 <= 99; num2++)
 		{
