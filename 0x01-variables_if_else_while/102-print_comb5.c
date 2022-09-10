@@ -2,8 +2,7 @@
 /**
  * main - printing all possible combinations of two digits
  * ranging from 0 - 99, separated by a comma folowed by a space
- *
- * Return: 0.
+ * Return: 0.(success);
  */
 int main(void)
 
@@ -42,6 +41,6 @@ int main(void)
 		}
 
 	}
-
-	putchar ('\n');
+		putchar ('\n');
 	return(0);
+}
