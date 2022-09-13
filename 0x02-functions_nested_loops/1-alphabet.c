@@ -1,20 +1,40 @@
-#include "main.h"
+#include "main.h"
+
+
 
 /**
- * Print_alphabet function to print abc
+
+ * print_alphabet - prints the english alphabet.
+
  *
- * Return: 0
+
+ * Return: void.
+
  */
 
 void print_alphabet(void)
+
 {
-	char c;
 
-	for (c = 'a'; c <= 'z'; c++)
+	char i;
+
+
+
+	i = 'a';
+
+	while (i <= 'z')
+
 	{
-		_putchar(c);
-	}
-_putchar("\n");
 
-return (0);
-}
+		_putchar(i);
+
+
+
+		i++;
+
+	}
+
+
+
+	_putchar('\n');
+
