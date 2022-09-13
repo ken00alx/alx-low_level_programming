@@ -3,13 +3,9 @@
 
 
 /**
-
  * print_alphabet - prints the english alphabet.
-
  *
-
  * Return: void.
-
  */
 
 void print_alphabet(void)
