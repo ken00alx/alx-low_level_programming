@@ -2,9 +2,9 @@
 
 /**
  * print_alphabet_x10 - print the english alphabet 10x
- *
  * Return: void.
  */
+
 void print_alphabet_x10(void)
 {
 	int whole, single;
@@ -12,10 +12,10 @@ void print_alphabet_x10(void)
 	whole = 0;
 	while (whole < 10)
 	{
-		single = 97;
-		while (single <= 122)
+	single = 97;
+	while (single <= 122)
 		{
-			_putchar(single);
+		_putchar(single);
 
 			single++;
 		}
