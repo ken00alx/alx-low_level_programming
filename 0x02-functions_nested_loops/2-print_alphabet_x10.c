@@ -1,27 +1,24 @@
 #include "main.h"
 
 /**
- * print_alphabet_x10 - print the english alphabet 10x
- * Return: void.
+ * print_alphabet_x10 - prints 10 times the alphabet, in lowercase,
+ * followed by a new line
  */
-
 void print_alphabet_x10(void)
 {
-	int whole, single;
+	char ch;
+	int i;
 
-	whole = 0;
-	while (whole < 10)
+	i = 0;
+
+	while (i < 10)
 	{
-	single = 97;
-	while (single <= 122)
+		ch = 'a';
+		while (ch <= 'z')
 		{
-		_putchar(single);
-
-			single++;
+			_putchar(ch);
+			ch++;
 		}
-
 		_putchar('\n');
-
-		whole++;
+		i++;
 	}
-}
