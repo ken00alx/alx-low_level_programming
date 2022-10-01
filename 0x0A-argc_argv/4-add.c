@@ -2,7 +2,7 @@
 #include <stdlib.h>
 
 /**
- * main - return an addition of positive arguments
+ * main - returns an addition of positive arguments
  * @argc: length of arguments
  * @argv: arguments passed
  * Return: 0
@@ -16,16 +16,16 @@ int main(int argc, char **argv)
 	{
 	for (b = 0; (argv[a])[b] != '\0'; b += 1)
 	{
-	if (((argv[a][b] - '0') >=0 && ((argv[a])[b] -'0') <=9)
-		continue;
-		else
-		{
+	if (((argv[a])[b] - '0') >= 0 && ((argv[a])[b] - '0') <= 9)
+	continue;
+	else
+	{
 		printf("Error\n");
 		return (1);
-		}
-		}
-		result += atoi(argv[a]);
-		}
+	}
+	}
+	result += atoi(argv[a]);
+	}
 		printf("%d\n", result);
-		return(0);
+		return (0);
 }
