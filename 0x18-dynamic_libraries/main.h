@@ -1,4 +1,3 @@
-#!/bin/bash
 #ifndef _MAIN_H_
 #define _MAIN_H_
 nt _putchar(char c);
