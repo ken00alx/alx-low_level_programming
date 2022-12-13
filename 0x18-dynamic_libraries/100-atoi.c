@@ -1,100 +1,35 @@
 #include "main.h"
 
 /**
- * _strlen - returns the length of a string
- * @s: string
- * Return: length
+ * _atoi - converts a string to an integer.
+ * @s: params
+ * Return: something
  */
-int _len(char *s)
-{
-	int len = 0;
-
-	while (*s != '\0')
-	{
-		len++;
-		s++;
-	}
-
-	return (len);
-}
-
-/**
- * idx_num_starts - find index where a digit is first found in string
- * @s: string to search
- * Return: integer index where digit is first found
- */
-
-int idx_num_starts(char *s)
-{
-	int i;
-
-	for (i = 0; i < _len(s); i++)
-	{
-		if (s[i] >= '0' && s[i] <= '9')
-			return (i);
-	}
-	return (-1); /* return -1 if no digits found */
-}
-
-/**
- * find_sign - determine if integer is negative
- * s: integer
- * Return: integer 1 or -1
- */
-int find_sign(char *s)
-{
-	int negatives = 0, i = 0, sign = 1;
-
-	while (i < (idx_num_starts(s)))
-	{
-		if (s[i++] == '-')
-			negatives++;
-	}
-
-	if (negatives % 2 != 0)
-		sign = -1;
-
-	return (sign);
-}
-
-/**
- * _atoi - convert string to int
- * @s: string to convert
- * Return: integer
- */
-
 int _atoi(char *s)
 {
-	int idx_digit_starts = (idx_num_starts(s));
-	int sign;
-	int digits_to_print = 0;
-	int t = 1, i;
-	unsigned int num = 0;
-	int digit = (idx_num_starts(s));
+	unsigned int count = 0, size = 0, j = 0, k = 1, m = 1, i;
 
-	if (idx_digit_starts < 0) /* if no digits found, exit program */
-		return (0);
-	sign = find_sign(s);
-
-	while ((s[idx_digit_starts] >= '0' && s[idx_digit_starts] <= '9')
-			&& (idx_digit_starts <= _strlen(s))) /* count digits to print */
+	while (*(s + count) != '\0')
 	{
-		digits_to_print += 1;
-		idx_digit_starts++;
+		if (size > 0 && (*(s + count) < '0' || *(s + count) > '9'))
+			break;
+
+		if (*(s + count) == '-')
+			k *= -1;
+
+		if ((*(s + count) >= '0') && (*(s + count) <= '9'))
+		{
+			if (size > 0)
+				m *= 10;
+			size++;
+		}
+		count++;
 	}
 
-	i = 1;
-	while (i < digits_to_print) /* find powers of ten to multiply places */
+	for (i = count - size; i < count; i++)
 	{
-		t *= 10;
-		i++;
+		j = j + ((*(s + i) - 48) * m);
+		m /= 10;
 	}
-
-	for (i = digit; i < (digit + digits_to_print); i++) /* calculate num */
-	{
-		num += (s[i] - '0') * t;
-		t /= 10;
-	}
-
-	return (num * sign);
+	return (j * k);
 }
