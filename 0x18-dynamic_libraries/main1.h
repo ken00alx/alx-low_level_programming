@@ -1,11 +1,8 @@
 #ifndef _MAIN1_H_
 #define _MAIN1_H_
+	
+void connect();
+int randNum();
+int addNum(int a, int b);
 
-
-int add(int a, int b);
-int sub(int a, int b);
-int div(int a, int b);
-int mul(int a, int b);
-int mod(int a, int b);
-
-#endif /* MAIN1_H*/
+#endif

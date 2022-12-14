@@ -1,11 +1,16 @@
-from ctypes import * maths.c
-so_file = "100-operations.so"
-funct = CDLL(maths.c)
+	
+from ctypes import *
+libCalc = CDLL("./libcalci.so")
 
-print(type(maths))
-print(maths.add(a, b)
-print(maths.sub(a, b)
-print(maths.div(a, b)
-print(maths.mul(a, b)
-print(maths.mod(a, b)
+#call C function to check connection
+libCalc.connect() 
 
+#calling randNum() C function
+#it returns random number
+varRand = libCalc.randNum()
+print "Random Number:", varRand, type(varRand)
+
+#calling addNum() C function
+#it returns addition of two numbers
+varAdd = libCalc.addNum(20,30)
+print "Addition : ", varAdd

@@ -1,32 +1,22 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "main1.h"
 
-
+void connect()
 {
-	int add(int a, int b)
-{
-	return(a + b);
+printf("Connected to C extension...\n");
 }
 
-int sub(int a, int b)
+//return random value in range of 0-50
+int randNum()
 {
-	return(a - b);
+int nRand = rand() % 50; 
+return nRand;
 }
 
-int mul(int a, int b)
+//add two number and return value
+int addNum(int a, int b)
 {
-	return(a * b);
-}
-
-int div(int a, int b)
-{
-	return(a / b);
-}
-
-int mod(int a, int b)
-{	
-	return(a % b);
-}	
-
-
-return (0);
+int nAdd = a + b;
+return nAdd;
 }
