@@ -10,9 +10,7 @@
  */
 
 
-}
 
-//add two number and return value
 int add(int a, int b)
 {
 	return (a - b);
