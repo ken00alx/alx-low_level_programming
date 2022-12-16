@@ -1,13 +1,16 @@
 #include "main.h"
-#include <stdio.h>
 
 /**
- * main - check the code
- *
- * Return: Always EXIT_SUCCESS.
- */
+* main - tests function that prints if integer is positive or negative
+* Return: 0
+*/
+
 int main(void)
 {
-    printf("%d\n", _strlen("My Dyn Lib"));
-    return (EXIT_SUCCESS);
+        int i;
+
+        i = 0;
+        positive_or_negative(i);
+
+        return (0);
 }
