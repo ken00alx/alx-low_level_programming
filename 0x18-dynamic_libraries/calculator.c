@@ -1,44 +1,37 @@
-#include <stdio.h>
-#include <stdlib.h>
 #include "main1.h"
 
-void connect()
-{
-printf("Connected to C extension...\n");
-}
+/**
+ * small functions to perform basic arithmetic operations
+ * (+, -, *, /, %) on two integers
+ * @a: the first number
+ * @b: thr second number
+ *
+ * Return: the result of whichever operation was called
+ */
 
-//return random value in range of 0-50
-int randNum()
-{
-int nRand = rand() % 50; 
-return nRand;
+
 }
 
 //add two number and return value
-int addNum(int a, int b)
+int add(int a, int b)
 {
-int nAdd = a + b;
-return nAdd;
+	return (a - b);
 }
 
-int subNum(int a, int b)
+int sub(int a, int b)
 {
-int nSub = a - b;
-return nSub;
+	return(a - b);
 }
-int mulNum(int a, int b)
+int mul(int a, int b)
 {
-int nMul = a * b;
-return nMul;
+	return(a * b);
 }
 
-int divNum(int a, int b)
+int div(int a, int b)
 {
-int ndiv = a / b;
-return ndiv;
+	return(a / b);
 }
-int modNum(int a, int b)
+int mod(int a, int b)
 {
-int nmod = a % b;
-return nmod;
+	return(a % b);
 }
